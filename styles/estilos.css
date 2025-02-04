@@ -21,6 +21,9 @@
     --fw-body-copy-200: 200;
     --fw-body-copy-400: 400;
     --fw-body-copy-600: 600;
+
+    --width-mobile: 375px;
+    --width-desktop: 1440px;
 }
 
 body {
