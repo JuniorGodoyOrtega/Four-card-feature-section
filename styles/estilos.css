@@ -28,4 +28,83 @@
 
 body {
     font-family: var(--font-family);
+    font-size: var(--font-size-body-copy);
+    background-color: var(--color-very-light-gray);
+    height: 100dvh;
+}
+
+.container {
+    max-width: var(--width-desktop);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.encabezado {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-encabezado {
+    font-weight: var(--fw-body-copy-200);
+    font-size: 2rem;
+    color: var(--color-very-dark-blue);
+}
+
+.title-encabezado span {
+    font-weight: var(--fw-body-copy-600);
+}
+
+.subtitle-encabezado {
+    color: var(--color-grayish-blue);
+}
+
+.cards {
+    width: 80%;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-areas:
+        "supervisor team-builder calculator"
+        "supervisor karma calculator";
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.card {
+    padding: 20px;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 2px var(--color-grayish-blue);
+}
+
+.card-supervisor {
+    grid-area: supervisor;
+    border-top: 4px solid var(--color-cyan);
+}
+
+.card-team-builder {
+    grid-area: team-builder;
+    border-top: 4px solid var(--color-red);
+}
+
+.card-calculator {
+    grid-area: calculator;
+    border-top: 4px solid var(--color-blue);
+}
+
+.card-karma {
+    grid-area: karma;
+    border-top: 4px solid var(--color-orange);
+}
+
+.icon-card {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-image {
+    display: block;
+    width: 48px;
 }
