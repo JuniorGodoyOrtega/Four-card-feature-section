@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .encabezado {
@@ -58,6 +59,7 @@ body {
 
 .subtitle-encabezado {
     color: var(--color-grayish-blue);
+    padding: 20px 0;
 }
 
 .cards {
@@ -69,6 +71,7 @@ body {
         "supervisor karma calculator";
     margin: 0 auto;
     gap: 30px;
+    padding-top: 20px;
 }
 
 .card {
@@ -107,4 +110,20 @@ body {
 .icon-image {
     display: block;
     width: 48px;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-very-dark-blue);
+    padding: 40px;
+}
+
+.attribution a {
+    color: var(--color-cyan);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
 }
