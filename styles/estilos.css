@@ -135,3 +135,26 @@ body {
 .attribution a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .encabezado {
+        width: 80%;
+    }
+
+    .title-encabezado {
+        font-size: 1.4rem;
+    }
+
+    .subtitle-encabezado {
+        font-size: 0.9rem;
+    }
+
+    .cards {
+        width: 80%;
+        grid-template-areas:
+            "supervisor"
+            "team-builder"
+            "karma"
+            "calculator";
+    }
+}
