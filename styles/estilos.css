@@ -58,14 +58,13 @@ body {
 }
 
 .subtitle-encabezado {
-    color: var(--color-grayish-blue);
+    color: var(--color-very-dark-blue);
     padding: 20px 0;
 }
 
 .cards {
     width: 80%;
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-areas:
         "supervisor team-builder calculator"
         "supervisor karma calculator";
@@ -79,6 +78,7 @@ body {
     align-self: center;
     border-radius: 10px;
     box-shadow: 0 5px 10px 2px var(--color-grayish-blue);
+    background-color: white;
 }
 
 .title-card {
